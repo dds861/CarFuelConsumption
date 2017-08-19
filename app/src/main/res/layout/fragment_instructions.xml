@@ -6,19 +6,68 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
 
-
-        <TextView
-            android:id="@+id/textView"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="РАСЧЕТ РАСХОДА ТОПЛИВА НА 100 КМ ПО АЛГОРИТМУ \n
-\n1. Для начала залейте полный бак топливом и зафиксируйте пробег автомобиля до его последующего использования. Это очень удобно, но если вы по каким-либо причинам не можете залить полный бак, храните все чеки. Информация, изложенная в них, пригодится для расчета.
-\n2. После этого эксплуатируйте автомобиль, пока топливо полностью не израсходуется. Затем необходимо снова зафиксировать пробег.
-\n3. Итак, у вас есть два числа: пробег, зафиксированный перед использованием автомобиля с полным баком, и последний пробег. Вычтите из второго числа первое. Разность показывает, сколько километров вы проехали, используя все содержимое полного бака.
-\n4. Вспомните, сколько литров вы залили в бак.
-\n5. Теперь у вас есть все данные, чтобы подставить их в формулу, имеющую следующий вид: V/S х 100.
-\nS – количество километров, которое вы проехали с использованием полного бака. V – количество бензина, которое вы истратили. Результат деления километров на литры умножается на 100, чтобы получить число, показывающее, какое количество бензина понадобится вашему автомобилю, чтобы проехать 100 км." />
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:gravity="center"
+                style="@style/instructionsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/InstructionsText1" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/instructionsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/InstructionsText2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/instructionsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/InstructionsText3" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/instructionsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/InstructionsText4" />
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/instructionsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/InstructionsText5" />
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/instructionsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/InstructionsText6" />
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/instructionsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/InstructionsText7" />
+
+        </LinearLayout>
+
+
     </ScrollView>
+
+
 </LinearLayout>

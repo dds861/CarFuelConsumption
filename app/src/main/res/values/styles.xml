@@ -7,8 +7,37 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-<style name="textss">
-    <item name="android:gravity">center</item>
-</style>
+
+    <style name="textLeft">
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:background">@color/background</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="textRight">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:background">@color/background</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_weight">1.5</item>
+    </style>
+
+    <style name="btnCounting">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+    <style name="btnOther">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+    <style name="instructionsText">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
 
 </resources>

@@ -1,9 +1,11 @@
 package com.carfuelconsumption.dd.carfuelconsumption;
 
+import android.content.Context;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
         btnCounting = (Button) findViewById(R.id.btnCounting);
         btnInstructions = (Button) findViewById(R.id.btnInstructions);
 
+        btnInstructions.setVisibility(View.VISIBLE);
+        btnCounting.setVisibility(View.GONE);
+
         fragment1();
 
 
@@ -33,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (fragmentInstructions.isAdded()) {
+
+
+                    btnInstructions.setVisibility(View.VISIBLE);
+                    btnCounting.setVisibility(View.GONE);
+
+
                     fragment1();
                 }
             }
@@ -42,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (fragmentCounting.isAdded()) {
+                    btnInstructions.setVisibility(View.GONE);
+                    btnCounting.setVisibility(View.VISIBLE);
                     fragment2();
                 }
             }
@@ -56,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.remove(fragmentInstructions);
         fragmentTransaction.add(R.id.frameLayout1, fragmentCounting);
         fragmentTransaction.commit();
-
 
     }
 

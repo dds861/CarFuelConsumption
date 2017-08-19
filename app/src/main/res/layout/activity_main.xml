@@ -15,11 +15,11 @@
             android:id="@+id/frameLayout1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/LinearLayoutButtons">
-
+            android:layout_above="@+id/LinearLayoutButtons"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
 
         </FrameLayout>
-
 
         <LinearLayout
             android:id="@+id/LinearLayoutButtons"
@@ -30,6 +30,7 @@
 
             <Button
                 android:id="@+id/btnCounting"
+                style="@style/btnOther"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -37,14 +38,13 @@
 
             <Button
                 android:id="@+id/btnInstructions"
+                style="@style/btnOther"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/instructions" />
         </LinearLayout>
 
-
     </RelativeLayout>
-
 
 </LinearLayout>

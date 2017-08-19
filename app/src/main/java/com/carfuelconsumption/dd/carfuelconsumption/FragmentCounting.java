@@ -1,12 +1,14 @@
 package com.carfuelconsumption.dd.carfuelconsumption;
 
 
+import android.content.Context;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -51,6 +53,7 @@ public class FragmentCounting extends Fragment {
         btn_poschitat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 //Check if all the EditTexts all filled
                 if (et_Cena_litra_topliva.getText().toString().isEmpty() ||
                         et_Zafiksirovannyj_probeg.getText().toString().isEmpty() ||
@@ -61,14 +64,19 @@ public class FragmentCounting extends Fragment {
                         ) {
                     Toast.makeText(v.getContext(), "Заполните все поля", Toast.LENGTH_SHORT).show();
                 }
-                //Check if all the et_Poslednij_probeg<et_Zafiksirovannyj_probeg
+
+                //Check if et_Poslednij_probeg < et_Zafiksirovannyj_probeg
                 else if (Integer.valueOf(et_Poslednij_probeg.getText().toString()) <=
                         Integer.valueOf(et_Zafiksirovannyj_probeg.getText().toString())
                         ) {
                     Toast.makeText(v.getContext(), "Пробег не может быть меньше зафиксированного ", Toast.LENGTH_SHORT).show();
                 }
+
                 //if all the parameters filled correct, do the application
                 else {
+
+
+
                     tv_rasxod_benzina_na_100_km(Itogo_projdennoe_rasstoyanie(), zalito_benzina_v_bak());
 
                 }
@@ -89,7 +97,7 @@ public class FragmentCounting extends Fragment {
         int difference = Poslednij_probeg - Zafiksirovannyj_probeg;
 
         //setting difference to tv_Itogo_projdennoe_rasstoyanie
-        tv_Itogo_projdennoe_rasstoyanie.setText(String.valueOf(difference));
+        tv_Itogo_projdennoe_rasstoyanie.setText(String.valueOf(difference)+ " км");
         return difference;
     }
 
@@ -104,7 +112,7 @@ public class FragmentCounting extends Fragment {
 
 
         //setting to TextView the result
-        et_zalito_benzina_v_bak.setText(String.valueOf(zalito_benzina_v_bak));
+        et_zalito_benzina_v_bak.setText(String.valueOf(zalito_benzina_v_bak)+" литров");
         return zalito_benzina_v_bak;
 
     }
@@ -116,7 +124,7 @@ public class FragmentCounting extends Fragment {
         int rasxod_benzina_na_100_km = zalito_benzina_v_bak * 100 / Itogo_projdennoe_rasstoyanie;
 
         //setting data to textview
-        tv_rasxod_benzina_na_100_km.setText(String.valueOf(rasxod_benzina_na_100_km));
+        tv_rasxod_benzina_na_100_km.setText(String.valueOf(rasxod_benzina_na_100_km)+ " литров");
     }
 
 }

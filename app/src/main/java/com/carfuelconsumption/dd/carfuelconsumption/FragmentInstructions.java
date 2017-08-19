@@ -18,7 +18,7 @@ public class FragmentInstructions extends Fragment {
 
 
     public FragmentInstructions() {
-        // Required empty public constructor
+
     }
 
 

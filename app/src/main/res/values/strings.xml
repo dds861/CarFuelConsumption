@@ -1,18 +1,18 @@
 <resources>
-    <string name="app_name">Расчет расхода топлива</string>
+    <string name="app_name">Расход Топлива на 100 км</string>
     <string name="instructions">Инструкции</string>
     <string name="counting">расчет</string>
-    <string name="cena_litra_topliva">Цена литра топлива:</string>
-    <string name="zafiksirovannyj_probeg">Зафиксированный пробег перед использованием авто с полным баком:</string>
-    <string name="poslednij_probeg">Последний пробег:</string>
+    <string name="cena_litra_topliva">Цена литра топлива, тенге/лт:</string>
+    <string name="zafiksirovannyj_probeg">Зафиксированный пробег перед использованием авто с полным баком, км:</string>
+    <string name="poslednij_probeg">Последний пробег, км:</string>
     <string name="itogo_projdennoe_rasstoyanie">Сколько километров вы проехали:</string>
-    <string name="oplacheno_za_polnyj_bak">Оплачено за полный бак:</string>
+    <string name="oplacheno_za_polnyj_bak">Оплачено за полный бак, тенге:</string>
     <string name="zalito_benzina_v_bak">Расход топлива:</string>
     <string name="rasxod_benzina_na_100_km">Расход топлива на 100 км:</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="poschitat">посчитать</string>
+    <string name="poschitat">нажмите чтобы посчитать</string>
     <string name="zapolnite_iacheiki">Заполните ячейки:</string>
     <string name="rezultati">Результаты:</string>
     <string name="tenge">тенге</string>

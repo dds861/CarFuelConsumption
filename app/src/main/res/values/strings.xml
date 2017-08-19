@@ -7,9 +7,10 @@
     <string name="poslednij_probeg">Последний пробег:</string>
     <string name="itogo_projdennoe_rasstoyanie">ИТОГО пройденное расстояние:</string>
     <string name="oplacheno_za_polnyj_bak">Оплачено за полный бак:</string>
-    <string name="zalito_benzina_v_bak">Залито бензина в бак:</string>
-    <string name="rasxod_benzina_na_100_km">Расход бензина на 100 км:</string>
+    <string name="zalito_benzina_v_bak">Залито топлива в бак:</string>
+    <string name="rasxod_benzina_na_100_km">Расход топлива на 100 км:</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="poschitat">посчитать</string>
 </resources>

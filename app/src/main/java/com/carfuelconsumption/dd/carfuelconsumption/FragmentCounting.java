@@ -75,8 +75,6 @@ public class FragmentCounting extends Fragment {
                 //if all the parameters filled correct, do the application
                 else {
 
-
-
                     tv_rasxod_benzina_na_100_km(Itogo_projdennoe_rasstoyanie(), zalito_benzina_v_bak());
 
                 }
